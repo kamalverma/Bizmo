@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlStrip"
+    >
+    
+    <ImageView
+        android:contentDescription="@string/app_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/my_profile_default_image"
+        android:id="@+id/ivRecentUserImage"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="5dp"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textColor="#757e8b"
+        android:paddingTop="3dp"
+        android:id="@+id/tvRecentUserName"
+        android:layout_toRightOf="@+id/ivRecentUserImage"
+        android:singleLine="true"
+        />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:id="@+id/ivNext"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/list_right_arrow"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_id"
+        android:layout_marginRight="5dp"/>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#757e8b"
+        android:paddingTop="5dp"
+        android:id="@+id/tvRecentChatDate"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/ivNext"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#b6b6b6"
+        android:layout_toRightOf="@+id/ivRecentUserImage"
+        android:id="@+id/tvRecentChatMessage"
+        android:singleLine="true"
+        android:layout_below="@+id/tvRecentUserName"
+        android:layout_toLeftOf="@+id/ivNext"
+        />
+    
+    
+
+</RelativeLayout>

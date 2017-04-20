@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:orientation="vertical" >
+
+<RelativeLayout 
+    android:layout_width="300dp"
+    android:layout_height="330dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/white_bg"
+    android:orientation="vertical" >
+    
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/ivMessageIcon"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/message_icon"/>
+    
+    <TextView
+        android:id="@+id/tvConfirmMobile"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/ivMessageIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_box_bg"
+        android:gravity="center"
+        android:textColor="#757e8b"
+        android:textSize="22sp" />
+    
+    <TextView 
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvChangeMessage"
+        android:layout_below="@+id/tvConfirmMobile"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#757e8b"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change_number_popup_text"/>
+    
+    
+    <com.ui.common.PressableTextView 
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:id="@+id/tvCancel"
+        android:background="@drawable/butttons_bg"/>
+    
+     <com.ui.common.PressableTextView 
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="@string/ok"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:id="@+id/tvOk"
+        android:background="@drawable/butttons_bg"/>
+    
+    
+
+</RelativeLayout>
+</RelativeLayout>

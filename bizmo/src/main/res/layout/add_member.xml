@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+     <SearchView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srchSocial"
+        android:queryHint="@string/search"
+        android:inputType="text"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:layout_margin="10dp">
+        
+    </SearchView>
+    
+      <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/llbot"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        
+        <com.ui.common.PressableTextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="@string/cancel"
+            android:id="@+id/tvcancelPost"
+            android:background="@drawable/summarygreen_bg"
+            />
+        
+        <com.ui.common.PressableTextView
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="@string/send_invite"
+            android:id="@+id/tvSendInvite"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/profile_btn_bg"
+            />
+    </LinearLayout>
+    
+      <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvSocialConnection"
+        android:childDivider="#c8c8c8"
+        android:scrollingCache="true"
+        android:divider="#c8c8c8"
+        android:layout_above="@+id/llbot"
+        android:layout_below="@+id/srchSocial"
+        android:dividerHeight="1px"
+        android:textFilterEnabled="true"
+        >
+    </ListView>
+    
+      <ProgressBar 
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/prgSocial" 
+          android:layout_centerInParent="true"
+          android:visibility="gone"
+          />
+    
+      
+   
+    
+    
+    
+
+</RelativeLayout>

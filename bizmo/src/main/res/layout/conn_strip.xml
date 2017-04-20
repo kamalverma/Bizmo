@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+     >
+    
+    <com.ui.common.FastImageView 
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#cfcfcf"
+        
+        android:id="@+id/ivConnectionImage"
+        android:src="@drawable/connections_phone_default_user_image"
+        android:contentDescription="@string/app_name"/>
+    
+    <com.ui.common.PressableTextView 
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tvacceptLater"
+         android:text="@string/later"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/summarygreen_bg"/>
+    
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ivBizmoUser"
+        android:contentDescription="@string/app_id"
+        android:background="@drawable/bizmo_user"/>
+     <com.ui.common.PressableTextView 
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvacceptLater"
+        android:layout_marginRight="5dp"
+        android:id="@+id/tvaccept"
+        android:text="@string/accept"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/profile_btn_bg"/>
+     
+     <com.ui.common.CalibryTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/tvaccept"
+        android:layout_toRightOf="@+id/ivConnectionImage"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:singleLine="true"
+        android:id="@+id/tvUserName"
+        android:textSize="19sp"
+        android:textColor="#757e8b"
+        />
+     
+    
+
+</RelativeLayout>

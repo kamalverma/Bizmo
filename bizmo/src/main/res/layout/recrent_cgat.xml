@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#c8c8c8"
+        android:textFilterEnabled="true"
+        android:id="@+id/lvRecentChatList">
+        
+    </ListView>
+    
+    <ProgressBar 
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/prgRecentChats"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+  
+</RelativeLayout>

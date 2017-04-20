@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="10dp"
+     >
+     
+    <RelativeLayout 
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/rlProfilePic"
+        android:layout_alignParentRight="true"
+        >
+         <ImageView 
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/ivProfile"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_profile_default_image"
+        android:background="#ffffff"/>
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/edit"
+             android:textColor="#ffffff"
+             android:layout_centerHorizontal="true"
+             android:layout_alignParentBottom="true"
+             android:id="@+id/tvEditImage"
+             android:padding="5dp"
+             android:textSize="15sp"
+             />
+    
+       <ProgressBar 
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/prgProfilePic"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+       
+        
+    </RelativeLayout>
+   
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textSize="15sp"
+        android:id="@+id/tvMo"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#39567c"/>
+
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+771 232 4343"
+        android:textSize="19sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvMobileNumber"
+        android:layout_below="@+id/tvMo"
+        android:textColor="#757e8b"/>
+        
+       <TextView 
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:text="@string/profile_page"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvprofilePage"
+        android:background="@drawable/profile_btn_bg"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvMobileNumber"
+        android:textColor="#ffffff"/>
+         
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:layout_below="@+id/rlProfilePic"
+           android:id="@+id/edtName"
+           android:textSize="19sp"
+           android:textColor="#39567c"
+           android:inputType="text"
+           android:imeOptions="actionNext"
+            />
+       <Spinner
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_below="@+id/edtName"
+           android:textSize="19sp"
+           android:textColor="#39567c"
+           android:id="@+id/spCountry"
+            />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+           android:layout_below="@+id/spCountry"
+           android:id="@+id/edtStatus"
+           android:inputType="text"
+           android:textSize="19sp"
+           android:textColor="#39567c"
+           android:imeOptions="actionDone"
+            />
+       
+       <TextView 
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:text="@string/facebook"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvFacebook"
+        android:background="@drawable/fb_button_bg"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/edtStatus"
+        android:textColor="#ffffff"/>
+       
+       <TextView 
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:text="@string/vkontakte"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvVkontakte"
+        android:background="@drawable/vkontakte_btn_bg"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/edtStatus"
+        android:textColor="#ffffff"/>
+       
+       
+       
+       <TextView 
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="@string/save"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvSave"
+        android:background="@drawable/butttons_bg"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tvFacebook"
+        android:textColor="#ffffff"/>
+       
+       <TextView 
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="@string/delete_acc"
+        android:textSize="17sp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvDeleteAccount"
+        android:background="@drawable/summarygreen_bg"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/tvSave"
+        android:textColor="#ffffff"/>
+        <ProgressBar 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/prgProfile"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

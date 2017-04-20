@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <SearchView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/srchMember"
+        android:queryHint="@string/search"
+        android:inputType="text"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:layout_margin="10dp">
+    </SearchView>
+    
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="40dp"
+          android:orientation="horizontal"
+          android:id="@+id/llBottom"
+          android:visibility="gone"
+          android:layout_alignParentBottom="true">
+          
+          <com.ui.common.PressableTextView 
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="5"
+              android:text="@string/cancel"
+              android:gravity="center"
+              android:textSize="16sp"
+              android:textColor="#ffffff"
+              android:background="#cfcfcf"
+              android:id="@+id/tvCancel"
+              />
+          
+           <com.ui.common.PressableTextView 
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="5"
+              android:text="@string/select"
+              android:gravity="center"
+              
+              android:textSize="16sp"
+              android:textColor="#ffffff"
+              android:background="#5ade96"
+              android:id="@+id/tvSelect"
+              />
+          
+          
+          
+      </LinearLayout>
+    
+       <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvMembers"
+        android:childDivider="#c8c8c8"
+        android:scrollingCache="true"
+        android:divider="#c8c8c8"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/srchMember"
+        android:dividerHeight="1px"
+        android:textFilterEnabled="true"
+        >
+    </ListView>
+    
+      <ProgressBar 
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/prgMember" 
+          android:layout_centerInParent="true"
+          android:visibility="gone"
+          />
+    
+      
+      
+    
+
+</RelativeLayout>

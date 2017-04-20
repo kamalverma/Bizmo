@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Main Menu Activity Dimensions -->
+    <dimen name="confirm_mobile_popup_width">280dp</dimen>
+    <dimen name="confirm_mobile_popup_height">300dp</dimen>
+    
+     <dimen name="invite_popuup_width">304dp</dimen>
+     <dimen name="keyboard_height">230dip</dimen>   
+  
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+     <com.ui.common.PressableTextView  
+        android:layout_width="304dp"
+        android:layout_height="40dp"
+        android:id="@+id/tvCancel"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/popup_bg"
+        android:layout_centerHorizontal="true"
+        android:textColor="#007aff"
+        android:layout_marginTop="5dp"/>
+    
+    <RelativeLayout 
+    android:layout_width="304dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlUpper"
+    android:layout_above="@+id/tvCancel"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/popup_bg"
+    >
+    
+    <TextView  
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvInviteHeader"
+        android:text="@string/invite"
+        android:textSize="14sp"
+        android:textColor="#686868"
+        android:gravity="center"
+        android:drawableBottom="@drawable/seperater"
+        />
+    
+    <com.ui.common.PressableTextView  
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvSms"
+        android:text="@string/sms"
+        android:layout_below="@+id/tvInviteHeader"
+        android:textSize="25sp"
+        android:textColor="#007aff"
+        android:gravity="center"
+        android:drawableBottom="@drawable/seperater"
+        />
+    
+     <com.ui.common.PressableTextView  
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvEmail"
+        android:layout_below="@+id/tvSms"
+        android:text="@string/email"
+         android:textSize="25sp"
+        android:textColor="#007aff"
+        android:gravity="center"
+        android:drawableBottom="@drawable/seperater"
+        />
+     
+      <com.ui.common.PressableTextView  
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvSocial"
+        android:layout_below="@+id/tvEmail"
+        android:text="@string/social"
+         android:textSize="25sp"
+        android:textColor="#007aff"
+        android:gravity="center"
+        />
+      </RelativeLayout>
+      
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlUpper"
+        android:id="@+id/ivDismiss"
+        />
+      
+     
+    
+
+</RelativeLayout>

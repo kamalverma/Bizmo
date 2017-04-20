@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/llMain"
+    android:orientation="vertical" >
+    
+    
+      <RelativeLayout 
+            android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="#39567c"
+	        android:orientation="horizontal">
+	       
+           <com.ui.common.MyImageView
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:scaleType="center"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="5dp"
+	        android:paddingRight="10dp"
+	        android:src="@drawable/menu_button"
+	        android:id="@+id/ivUserImage"
+               />
+	       <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/tvHeader"
+	        android:text="@string/app_name"
+	        android:textColor="#ffffff"
+	        android:layout_marginTop="5dp"
+	        android:layout_toRightOf="@+id/ivUserImage"
+	        android:textSize="16sp"
+	        /> 
+	        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/tvUserStatus"
+	        android:text="@string/about"
+	        android:textColor="#5ade96"
+	        android:layout_marginBottom="3dp"
+	        android:layout_below="@+id/tvHeader"
+	        android:layout_toRightOf="@+id/ivUserImage"
+	        android:textSize="12sp"
+	        />
+	       
+	        <com.ui.common.MyImageView
+            android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:scaleType="center"
+	        android:layout_alignParentRight="true"
+	        android:src="@drawable/invite_button"
+	        android:id="@+id/ivInviteUser"
+	        android:layout_marginRight="10dp"
+               />
+            
+            
+        </RelativeLayout>
+    
+      <ListView
+         android:id="@+id/lvChat"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:padding="5dp"
+         android:animateLayoutChanges="true"
+         android:divider="@null"
+         android:layout_weight="1"
+         android:dividerHeight="5dp"
+         android:textFilterEnabled="true"
+         android:transcriptMode="alwaysScroll" >
+         
+         </ListView> 
+       <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#39567c"
+        android:id="@+id/rlFooter">
+        
+        <com.ui.common.MyImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/ivAddItemToChat"
+            android:src="@drawable/chat_plus_icon"/>
+        
+         <com.ui.common.MyImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/ivAddItemToChat"
+            android:id="@+id/ivSmilieys"
+            android:src="@drawable/chat_smiley_icon"/>
+         
+         <com.ui.common.MyImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivSendMessage"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/chat_call_icon"/>
+         
+         
+         <EditText
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:maxHeight="80dp"
+             android:minHeight="30dp"
+             android:layout_toRightOf="@+id/ivSmilieys"
+             android:layout_toLeftOf="@+id/ivSendMessage"
+             android:layout_centerVertical="true"
+             android:inputType="text"
+             android:textSize="16sp"
+             android:paddingLeft="5dp"
+             android:id="@+id/edtMessage"
+             android:background="@drawable/chat_box"
+             android:textColor="#000000"
+             />
+    </RelativeLayout>
+   
+    <LinearLayout
+        android:id="@+id/footer_for_emoticons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+         />
+    
+  
+    
+   
+        
+    
+    
+      
+  
+</LinearLayout>

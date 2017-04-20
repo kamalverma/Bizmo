@@ -1,0 +1,164 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.logicnext.bizmo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	 <uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.bizmo.engine.ChatEngine"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD-YoiH-Wd-DYXeA8X98cYhnzXn9wQLYoI" />
+        
+        <service android:name="com.bizmo.engine.UploadTask"  android:exported="false" />
+         <service android:name="com.bizmo.engine.DownloadTask"  android:exported="false" />
+        <activity android:name="com.vk.sdk.VKOpenAuthActivity" />
+        <activity android:name="com.facebook.LoginActivity"/>
+        
+        <activity
+            android:name="com.logicnext.bizmo.SplashActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.logicnext.bizmo.RegistrationActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.logicnext.bizmo.VarificationCodeActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.logicnext.bizmo.AddingConnectionActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.logicnext.bizmo.MoreActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.logicnext.bizmo.BusinessActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.logicnext.bizmo.ChatActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize|orientation"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.logicnext.bizmo.ConnectionsActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.logicnext.bizmo.MyProfileActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        
+            <activity
+            android:name="com.logicnext.bizmo.RecentChatList"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+          </activity>
+        
+           <activity
+            android:name="com.logicnext.bizmo.ProfilePageActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.logicnext.bizmo.AddMemberActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+        </activity>
+        
+           <activity
+            android:name="com.logicnext.bizmo.MapActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+          </activity>
+          
+          <activity
+            android:name="com.logicnext.bizmo.ChooseMemberActivity"
+            android:configChanges="keyboardHidden|navigation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" 
+            android:label="@string/app_name" >
+          </activity>
+        
+        
+    </application>
+
+</manifest>

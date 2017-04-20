@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+     >
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMain"
+            android:text="@string/main"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="#39567c"
+            android:gravity="center_vertical"
+            android:background="#f5f5f5"/>
+        
+        <!-- My Profile -->
+         <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           android:text="@string/my_profile"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/tvMain"
+           android:id="@+id/tvMyProfile"
+           android:drawableLeft="@drawable/my_profile_icon"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+           />
+         <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep1"
+             android:layout_below="@+id/tvMyProfile"
+             android:src="#c8c8c8"/>
+         
+        <!-- My Visitors -->
+       <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="45dp"
+	       android:layout_below="@+id/sep1"
+	       android:id="@+id/llMYVisitors"
+	       android:orientation="horizontal">
+	       <TextView
+	           android:layout_width="0dp"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:text="@string/my_visitors"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:id="@+id/tvMyVisitor"
+	           android:drawableLeft="@drawable/my_visitors_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	           />
+	         <TextView
+	           android:layout_width="20dp"
+	           android:layout_height="20dp"
+	           android:layout_marginRight="10dp"
+	           android:id="@+id/tvMyVisitorNumber"
+	           android:background="@drawable/butttons_bg"
+	           android:gravity="center"
+	           android:textSize="12sp"
+	           android:text="2"
+	           android:layout_gravity="center_vertical"
+	           android:textColor="#ffffff"
+	           />
+	         <com.ui.common.MyImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:layout_marginRight="10dp"
+             android:layout_gravity="center_vertical"
+             android:src="@drawable/list_right_arrow"/>
+	 </LinearLayout>
+	  <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep2"
+             android:layout_below="@+id/llMYVisitors"
+             android:src="#c8c8c8"/>
+	  <!-- Gidt Shop -->
+	  <LinearLayout
+	       android:layout_width="match_parent"
+	       android:layout_height="45dp"
+	       android:layout_below="@+id/sep2"
+	       android:id="@+id/llgiftShop"
+	       android:orientation="horizontal">
+	       <TextView
+	           android:layout_width="0dp"
+	           android:layout_height="match_parent"
+	           android:layout_weight="1"
+	           android:text="@string/gift_shop"
+	           android:textSize="19sp"
+	           android:id="@+id/tvGiftShop"
+	           android:paddingLeft="5dp"
+	           android:drawableLeft="@drawable/gift_shop_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	           />
+	         <TextView
+	           android:layout_width="20dp"
+	           android:layout_height="20dp"
+	           android:layout_marginRight="10dp"
+	           android:id="@+id/tvGiftShopNumber"
+	           android:text="2"
+	           android:background="@drawable/butttons_bg"
+	           android:textSize="12sp"
+	           android:gravity="center"
+	           android:layout_gravity="center_vertical"
+	           android:textColor="#ffffff"
+	           />
+	         <com.ui.common.MyImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" 
+             android:layout_marginRight="10dp"
+             android:layout_gravity="center_vertical"
+             android:src="@drawable/list_right_arrow"/>
+	 </LinearLayout>
+	 <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep3"
+             android:layout_below="@+id/llgiftShop"
+             android:src="#c8c8c8"/>
+	 <!-- GO Premium -->
+	  <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:text="@string/go_premium"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/sep3"
+           android:id="@+id/tvGoPremium"
+           android:drawableLeft="@drawable/go_premium_icon"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           />
+      <ImageView 
+         android:layout_width="match_parent"
+         android:layout_height="1px"
+         android:contentDescription="@string/app_name"
+         android:id="@+id/sep4"
+         android:layout_below="@+id/tvGoPremium"
+         android:src="#c8c8c8"/>
+        
+         
+         
+        
+        <!--My Business page  -->
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMyBusinessList"
+            android:text="@string/my_buisnesspage"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="#39567c"
+            android:layout_below="@+id/sep4"
+            android:gravity="center_vertical"
+            android:background="#f5f5f5"/>
+        
+         <com.ui.common.NonScrollableListView
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvMyBusinessPages"
+            android:layout_below="@+id/tvMyBusinessList"
+            >
+        </com.ui.common.NonScrollableListView>
+        
+        
+        
+        
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:text="@string/create_page"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/lvMyBusinessPages"
+           android:id="@+id/tvCreateNewPage"
+           android:drawableLeft="@drawable/create_business_page"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           />
+
+        
+        
+          <!--My WatchList page  -->
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWatchList"
+            android:text="@string/watch_list"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="#39567c"
+            android:layout_below="@+id/tvCreateNewPage"
+            android:gravity="center_vertical"
+            android:background="#f5f5f5"/>
+        
+        
+        
+        <com.ui.common.NonScrollableListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvWatchList"
+            android:layout_below="@+id/tvWatchList"
+            >
+        </com.ui.common.NonScrollableListView>
+        
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:text="@string/create_watchlist"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/tvWatchList"
+           android:id="@+id/tvCreateWatchList"
+           android:drawableLeft="@drawable/create_business_page"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           />
+        
+         <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep15"
+             android:layout_below="@+id/tvCreateWatchList"
+             android:src="#c8c8c8"/>
+         <!--Settings  -->
+         
+         
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSettings"
+            android:text="@string/settings"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="#39567c"
+            android:layout_below="@+id/sep15"
+            android:gravity="center_vertical"
+            android:background="#f5f5f5"/>
+        
+          <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:text="@string/notification"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/tvSettings"
+           android:id="@+id/tvNotification"
+           android:drawableLeft="@drawable/notifications_icon"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep5"
+             android:layout_below="@+id/tvNotification"
+             android:src="#c8c8c8"/>
+          <TextView
+           android:layout_width="match_parent"
+           android:layout_height="45dp"
+           android:text="@string/privacy"
+           android:textSize="19sp"
+           android:paddingLeft="5dp"
+           android:layout_below="@+id/sep5"
+           android:id="@+id/tvPrivacy"
+           android:drawableLeft="@drawable/privacy_icon"
+           android:drawablePadding="8dp"
+           android:gravity="center_vertical"
+           android:textColor="#757e8b"
+            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep6"
+             android:layout_below="@+id/tvPrivacy"
+             android:src="#c8c8c8"/>
+ 
+           <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="45dp"
+	           android:text="@string/about"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:layout_below="@+id/sep6"
+	           android:id="@+id/tvAbout"
+	           android:drawableLeft="@drawable/about_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+	           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep7"
+             android:layout_below="@+id/tvAbout"
+             android:src="#c8c8c8"/>
+           
+           <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="45dp"
+	           android:text="@string/rules"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:layout_below="@+id/sep7"
+	           android:id="@+id/tvRules"
+	           android:drawableLeft="@drawable/rules_and_conditions_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+	           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep8"
+             android:layout_below="@+id/tvRules"
+             android:src="#c8c8c8"/>
+           
+          <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="45dp"
+	           android:text="@string/report_problem"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:layout_below="@+id/sep8"
+	           android:id="@+id/tvReport"
+	           android:drawableLeft="@drawable/report_a_problem_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	            android:drawableRight="@drawable/list_right_arrow"
+           android:layout_marginRight="10dp"
+	           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep9"
+             android:layout_below="@+id/tvReport"
+             android:src="#c8c8c8"/>
+           
+           <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="45dp"
+	           android:text="@string/tell_friend"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:layout_below="@+id/sep9"
+	           android:id="@+id/tvtellFriend"
+	           android:drawableLeft="@drawable/tell_a_friend_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	           android:drawableRight="@drawable/list_right_arrow"
+               android:layout_marginRight="10dp"
+	           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep10"
+             android:layout_below="@+id/tvtellFriend"
+             android:src="#c8c8c8"/>
+           
+             <TextView
+	           android:layout_width="match_parent"
+	           android:layout_height="45dp"
+	           android:text="@string/logout"
+	           android:textSize="19sp"
+	           android:paddingLeft="5dp"
+	           android:layout_below="@+id/sep10"
+	           android:id="@+id/tvLogout"
+	           android:drawableLeft="@drawable/logout_icon"
+	           android:drawablePadding="8dp"
+	           android:gravity="center_vertical"
+	           android:textColor="#757e8b"
+	           android:drawableRight="@drawable/list_right_arrow"
+               android:layout_marginRight="10dp"
+	           />
+          
+           <ImageView 
+             android:layout_width="match_parent"
+             android:layout_height="1px"
+             android:contentDescription="@string/app_name"
+             android:id="@+id/sep11"
+             android:layout_below="@+id/tvLogout"
+             android:src="#c8c8c8"/>
+    </RelativeLayout>
+    
+  
+        
+   
+    
+ 
+    
+    
+
+</ScrollView>

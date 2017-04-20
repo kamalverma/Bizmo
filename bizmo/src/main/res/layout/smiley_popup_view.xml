@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="@dimen/keyboard_height"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:id="@+id/llfooter"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="40dp"
+            android:text="@string/smileys"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#abcdef"
+            />
+         <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="40dp"
+            android:text="@string/gifts"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:background="#abcdef"
+            />
+    </LinearLayout>
+    
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:columnWidth="106dp"
+        android:background="#c8c8c8"
+        android:numColumns="3"
+        android:id="@+id/GvAttachment">
+        
+    </GridView>
+    
+    <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#ffffff"
+       android:visibility="gone"
+       android:id="@+id/rlAudioRecorder">
+         
+       <ImageView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:src="@drawable/voice_rec_button"
+           android:contentDescription="@string/app_name"
+           android:id="@+id/ivRecoedAudio"/>
+       
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_above="@+id/ivRecoedAudio"
+           android:id="@+id/tvRecorcTime"
+           android:textSize="20sp"
+           android:textColor="#0071ff"/>
+       
+   </RelativeLayout>
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>

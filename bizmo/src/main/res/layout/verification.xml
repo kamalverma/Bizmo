@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/tvHeader"
+        android:text="@string/registration"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="#39567c"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeader"
+        android:id="@+id/tvPleaseEnter"
+        android:text="@string/pls_enter_verification"
+        android:layout_margin="10dp"
+        android:textColor="#757e8b"
+        android:textSize="14sp"
+        />
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPleaseEnter"
+        android:id="@+id/edtVerificationCode"
+        android:inputType="phone"
+        android:hint="@string/verification_hint"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="#39567c"
+        android:layout_margin="10dp"
+        />
+    
+
+      <com.ui.common.PressableTextView 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tvNext"
+        android:text="@string/next"
+        android:layout_below="@+id/edtVerificationCode"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/butttons_bg"/>
+      
+      <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dint_receivd"
+        android:layout_below="@+id/tvNext"
+        android:gravity="center"
+        android:textColor="#757e8b"
+        android:id="@+id/tvDintRecieved"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        />
+    
+        <com.ui.common.PressableTextView 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tvResend"
+        android:text="@string/resend"
+        android:layout_below="@+id/tvDintRecieved"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/butttons_bg"/>
+    
+          <ProgressBar 
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:id="@+id/prgVerification"
+          android:visibility="gone"
+          android:layout_centerInParent="true"/>
+
+</RelativeLayout>

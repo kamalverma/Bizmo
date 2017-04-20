@@ -1,0 +1,160 @@
+<resources>
+
+    <string name="app_name">Bizmo</string>
+    <string name="app_id">235880456434029</string>
+    <string name="registration">Registration</string>
+    <string name="verify_phone">Verify Phone Number</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="resend">Resend Verification Code</string>
+    <string name="dint_receivd">Didn\'t receive a text message?</string>
+    <string name="verification_hint">Enter your verification code here</string>
+    <string name="pls_enter_verification">Please enter the verification code sent via SMS.</string>
+    <string name="reg_screen_text">Phone numbers will be used for identification
+				purposes and to prevent misuse of the Bizmo	service. \n \n
+				It will not be shown to other users unless you
+				change settings. \n  \nTo use Bizmo please verify your Phone Number</string>
+    <string name="change_number_popup_text">You will receive a verification code to this 
+					number via SMS. If you want to change 
+					your phone number, please select “Cancel”.</string>
+					
+    
+    <string name="add_connection">Adding Connections</string>
+    <string name="auto_add_conection">Auto Add Connections</string>
+    <string name="allow_others">Allow Others to Add</string>
+    <string name="by_using">By using your phone book all your contacts already 
+        using Bizmo will be automatically added to connection list.</string>
+    <string name="you_will">You will automatically be added onto the connection list of any user who has your
+        phone number saved on his/her device, regardsless of whether you actually know the person or not.</string>
+    
+    <string name="allow_others_text">\u2022 Users added to your connections list will be
+        able to check your profile and chat with you.
+        \n\n
+         \u2022 You can always change your privacy settings by going to “Privacy Settings”.
+        </string>
+        
+      <string name="auto_add_text">\u2022 Only the phone number and mobile email addresses will be used. 
+          All other informations(images and names etc)will not be used.
+        \n\n
+         \u2022 All data will be encrypted and send securely to our servers. This data will not be used for any other purposes
+         other than to search for connections and to prevent misuse of Bizmo service.
+          \n\n
+         \u2022 You can always change your privacy settings by going to “Privacy Settings”.
+          \n\n
+         \u2022 When a connection cancels their phone number, there may be occasions when it become used by someone else. Please 
+         make sure you keep your contacts list/phone book organized.
+        </string>
+    
+        <string name="logout_message">Are you sure to logout from Bizmo?</string>
+        
+        <string name="linktofb">Do you want to link your profile with Facebook?</string>
+        <string name="linktovk">Do you want to link your profile with Vkontakte?</string>
+        <string name="no_user_selected">No user has been selected to send invitation.</string>
+        
+         <string name="email_subject">Let\'s meet and chat with Bizmo!</string>
+         
+         
+         <string name="wifi_warning">You are not connected to WI-FI. \n
+             Your mobile carrier fees may apply.(This notification will not be shown anymore) \n
+             Proceed anyway?</string>
+        
+         <string name="congurates">Congratulations! You have successfully registered.</string>
+         
+         <string name="invite_message">recommends you to download Bizmo - free mobile application that lets you meet new customers, vendors and subcontracts as well as send messages,
+              files and make calls, all for free! Bizmo works on iPhone, Android and even your PC!
+
+Download \nBizmo now at "link" and enjoy easy business connections and free communication.
+
+Bizmo - \nconnecting business fast and for free ©</string>
+
+         <string name="invite_message_without_name">Download Bizmo - free mobile application that lets you meet new customers, vendors and subcontracts as well as send messages,
+              files and make calls, all for free! Bizmo works on iPhone, Android and even your PC!
+
+Download \nBizmo now at "link" and enjoy easy business connections and free communication.
+
+Bizmo - \nconnecting business fast and for free ©</string>
+         
+      
+      <!-- Connection Screen -->
+      
+     <string name="search">Search</string>
+     <string name="select">Select</string>
+     <string name="conn_req">Connection Requests</string>
+     <string name="bizmo_conn">Bizmo Connections</string>
+     <string name="phonebook">Phone Book</string>
+     <string name="accept">Accept</string>
+     <string name="later">Later</string>
+     
+     <string name="connection">Connections</string>
+     <string name="business">Business</string>
+     <string name="chats">Chats</string>
+     <string name="choose">Choose Members</string>
+     <string name="more">More</string>
+    
+    <!-- Error messages -->
+    
+    <string name="err_empty_code">Please fill the verifiaction code</string>
+    <string name="err_empty_phone">Please fill a valid phone number</string>
+    
+    
+    <!-- More -->
+     <string name="my_profile">My Profile</string>
+     <string name="my_visitors">My Visitors</string>
+     <string name="gift_shop">Gift Shop</string>
+     <string name="go_premium">Go Premium!</string>
+     <string name="main">Main</string>
+     <string name="my_buisnesspage">My Business Pages</string>
+     <string name="watch_list">Watching List</string>
+     <string name="settings">Settings</string>
+    <string name="create_page">Create a Business Page</string>
+    <string name="create_watchlist">add a company to watch </string>
+    
+    <string name="notification">Notification Settings</string>
+    <string name="privacy">Privacy Settings</string>
+    <string name="about">About Bizmo</string>
+    <string name="rules">Rules and Conditions</string>
+    <string name="report_problem">Report a Problem</string>
+    <string name="tell_friend">Tell a Friend</string>
+    <string name="logout">Logout</string>
+    
+      <!-- Profile page -->
+     <string name="mobile">Mobile</string>
+     <string name="profile_page">Profile Page</string>
+     <string name="facebook">Facebook</string>
+     <string name="vkontakte">Vkontakte</string>
+     <string name="delete_acc">Delete Account</string>
+     <string name="save">Save</string>
+     <string name="free_call">Call</string>
+     <string name="free_message">Free Message</string>
+     <string name="status">Status</string>
+     <string name="location">Location</string>
+     <string name="see_business">See Business Pages</string>
+     
+     
+     <string name="sms">SMS</string>
+     <string name="email">Email</string>
+     <string name="social">Social</string>
+     <string name="invite">Invite Others</string>
+     
+      <string name="group_title">Enter the group title.</string>
+     <string name="Create">Create</string>
+     
+     <string name="add_mem">Add Members</string>
+     <string name="send_invite">Send Invite SMS</string>
+     <string name="send_email">Send Email</string>
+     
+     <string name="smileys">SMILEYS</string>
+     <string name="gifts">GIFTS</string>
+     <string name="choose_photo">Choose Photo</string>
+     <string name="camera">Camera</string>
+     <string name="video">Video</string>
+     <string name="choose_video">Choose Video</string>
+     <string name="voice_message">Voice Message</string>
+     <string name="contacts">Contacts</string>
+     <string name="my_location">My Location</string>
+     
+ 
+</resources>
